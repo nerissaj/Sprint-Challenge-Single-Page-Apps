@@ -6,21 +6,24 @@ import Episode from './components/episode';
 import LocationList from './components/LocationsList';
 import { Link } from 'react-router-dom';
 import CharacterCard from './components/CharacterCard.js';
-import LocationCard from './components/LocationCard.js';
+import LocationCard from "./components/LocationCard.1";
 
 
 export default function App() {
-  return <main>
 
+
+
+  return <main>
+<Link to="/characters">Characters</Link> 
+    <Link to="/locations">Locations</Link>
+   <Link to="/episodes">Episodes></Link>
     
     <Header />
     <TabNav />
     
     <AppRouter />
     
-    <Link to="/characters"/ component={Characteer />
-    <Link to="/location"/ component={Location} />
-   <Link to="/episodes"/ component={Episode} />
     
+   
   </main>
 }

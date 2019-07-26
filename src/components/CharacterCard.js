@@ -7,18 +7,19 @@ import CharacterList from './CharacterList';
 const StyledDiv = styled.div`
 border: 1px solid black;
 `;
-export default function CharacterCard ({props}) {
-  
+export default function CharacterCard (props) {
+  console.log('props',props)
+
 
   return (
   
   <div><span>todo: location</span>
-    <StyledDiv >
+    <StyledDiv>
     <CharacterList  />
     
-    <p>name: {props.character.name}</p>
-    <p>status: {props.character.status}</p>
-    <p>species:{props.character.species}</p>
+    <p> {props.chars.name}</p>
+    <p> {props.chars.status}</p>
+    <p>{props.chars.species}</p>
     <p></p>
    
     </StyledDiv> 

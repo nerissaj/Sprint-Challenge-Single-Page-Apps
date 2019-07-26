@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+
+
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
 import LocationCard from './LocationCard';
 
-export default function LocationsList() {
+export default function LocationsList(props) {
 const [location, setLocation] = useState([])
 
 
@@ -22,7 +25,7 @@ useEffect(()=>{
 
     return(
         <div>
-            {location.map((place, index) => <LocationCard place={place} key={index}  />)}
+            {location.map((location, index)=> <LocationCard location={location} key={index}  />)}
               
         
         </div>
@@ -30,5 +33,31 @@ useEffect(()=>{
         );
      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
