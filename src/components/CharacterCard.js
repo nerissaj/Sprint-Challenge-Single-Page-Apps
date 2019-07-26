@@ -1,13 +1,14 @@
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+
 import styled from 'styled-components'
 import CharacterList from './CharacterList';
+
 
 const StyledDiv = styled.div`
 border: 1px solid black;
 `;
-export default function CharacterCard (props) {
+export default function CharacterCard(props) {
   console.log('props',props)
 
 
@@ -15,7 +16,7 @@ export default function CharacterCard (props) {
   
   <div><span>todo: location</span>
     <StyledDiv>
-    <CharacterList  />
+    <CharacterList />
     
     <p> {props.chars.name}</p>
     <p> {props.chars.status}</p>

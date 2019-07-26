@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+
 import LocationCard from './LocationCard';
 
 export default function LocationsList(props) {
