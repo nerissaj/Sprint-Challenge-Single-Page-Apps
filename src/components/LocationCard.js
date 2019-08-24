@@ -23,7 +23,7 @@ export default function LocationCard (props) {
       <LocationsList />
 
      <StyledImg src = {props.location.image} />
-    <p> name: {props.location.name}</p>
+    <p> name:{props.location.name}</p>
     <p> location: {props.location.type}</p>
     <p> {props.location.dimension}</p>
     <p>{props.location.resident}</p>
